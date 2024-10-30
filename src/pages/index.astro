@@ -1,14 +1,85 @@
 ---
-import ThemeToggle from '../components/ThemeToggle';
-import Layout from '../layouts/Layout.astro';
+import ThemeToggle from "../components/ThemeToggle";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<main class="min-h-screen">
-		<div class="flex justify-between p-4">
-			<p class="text-3xl text-black dark:text-white " >bruk.dev</p>
-			<ThemeToggle client:load />
-		</div>
-	</main>
-</Layout>
+  <main class="min-h-screen">
+    <div
+      class="sticky backdrop-blur-sm bg-white/10 dark:bg-black/10 top-0 flex justify-between p-4"
+    >
+      <p class="text-3xl text-black dark:text-white">bruk.dev</p>
+      <ThemeToggle client:load />
+    </div>
+    <article class="prose mx-auto dark:prose-invert p-4">
+      <article>
+        <h2>Unique Approach to UI Components</h2>
+        <p>
+          Unlike traditional UI libraries such as Material UI or Chakra UI,
+          which provide bundled components, Shadcn UI offers a <strong
+            >collection of reusable components</strong
+          > that developers can directly copy and paste into their applications.
+          This approach allows for greater flexibility and customization, as developers
+          can choose only the components they need without being tied to a larger
+          framework.
+        </p>
 
+        <h2>Built on Modern Technologies</h2>
+        <p>
+          Shadcn UI is built on <strong>Tailwind CSS</strong> and <strong
+            >Radix UI</strong
+          >, which enhances its capabilities in creating responsive and
+          accessible user interfaces. It supports various frameworks including
+          Next.js, Gatsby, and Vite, making it versatile for different
+          development environments. The integration with Tailwind CSS allows for
+          rapid styling and customization while maintaining a clean codebase.
+        </p>
+
+        <h2>Rapid Adoption and Community Support</h2>
+        <p>
+          Since its launch, Shadcn UI has garnered significant attention,
+          reflected in its impressive metrics: over <strong
+            >37,000 GitHub stars</strong
+          > and nearly <strong>24,000 weekly NPM downloads</strong>. This rapid
+          adoption indicates a strong community interest and support, essential
+          factors for the sustainability of any open-source project.
+          Additionally, the backing from Vercel further solidifies its
+          credibility in the market.
+        </p>
+
+        <h2>Key Features Driving Popularity</h2>
+        <ul>
+          <li>
+            <strong>Ease of Use</strong>: Developers with basic knowledge of
+            HTML, CSS, and JavaScript can easily implement Shadcn UI components.
+            The library's straightforward installation methods (copy-paste or
+            CLI) lower the barrier to entry.
+          </li>
+          <li>
+            <strong>Accessibility</strong>: Adhering to Web Content
+            Accessibility Guidelines (WCAG), Shadcn UI ensures that applications
+            built with it are accessible to all users, including those utilizing
+            screen readers and keyboard navigation.
+          </li>
+          <li>
+            <strong>Customization Options</strong>: Shadcn UI allows developers
+            to modify component source code directly, providing fine-grained
+            control over design and functionality. This level of customization
+            is particularly beneficial for projects requiring specific design
+            elements.
+          </li>
+        </ul>
+
+        <h2>Conclusion: A Strong Contender in the Market</h2>
+        <p>
+          Shadcn UI represents a shift in how developers approach building user
+          interfaces. Its unique model of providing reusable components combined
+          with modern technology stacks positions it as a strong contender among
+          existing libraries. As trends continue to evolve in web development,
+          Shadcn UI's focus on flexibility and accessibility is likely to keep
+          it at the forefront of the industry.
+        </p>
+      </article>
+    </article>
+  </main>
+</Layout>
